@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: arial;
+  line-height: 1.5;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 90%;
+  margin:  0 auto;
+  padding: 0 20px;
+}
+
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: arial;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  table-layout:fixed;
+}
+
+thead tr {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 12px 15px;
+  word-wrap:break-word;
+  white-space: pre-wrap;
+}
+
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #000000;
+}
+
+tbody tr.active-row {
+  font-weight: bold;
+  color: #000000;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.section-header{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+.Add-produto{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* position: left; */
+  /* right: 500px; */
+  /* top: 90px; */
+  width: 32%;
+  display: inline-block;
+  
+}
+
+.produtos-comprados{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* position: center; */
+  /* left: 40%; */
+  /* top: 90px; */
+  /* bottom: 125px; */
+  width: 32%;
+  display: inline-block;
+}
+
+.minhas-vendas{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* position: relative; */
+  /* left: 500px; */
+  /* bottom: 340px; */
+  width: 32%;
+  display: inline-block;
+}
+
+.Comprar-Produto{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* width: 1000px; */
+  /* position: relative; */
+  /* right: 250px; */
+  /* bottom: 300px; */
+}
+
+
+.quadro-minhas-vendas{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* width: 1000px; */
+  /* position: relative; */
+  /* right: 250px; */
+}
+
+.quadro-Add-vendas{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* position: center; */
+  width: 50%;
+  margin: 1rem auto;
+}
+
+
+.quadro-produtos-comprados{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  /* width: 900px; */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* width: 1000px; */
+  /* position: relative; */
+  /* right: 250px; */
+  /* bottom: 50px; */
+}
+
+
+
+.quadro-Add-produto{
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* position: center; */
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+}
+
+label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: center;
+}
+
+input[type=button]{
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 50%; 
+}
+
+input[type=button]:hover{
+  background-color: #313131; /* Green */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[class = btn]:hover{
+  background-color: #ca1d1d; /* Green */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+input[class = btn-compra]:hover{
+  background-color: #479e3f; /* Green */
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.divbotao{
+  text-align: center;
+}

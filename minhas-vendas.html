@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Produtos comprados</title>
+  </head>
+  <body>
+    <section class="quadro-minhas-vendas">
+        <section class="section-header">
+        <h1>Minhas Vendas</h1>
+        </section>
+        <form>
+          <div class="content">
+            <table>
+              <thead>
+                <th style="width:5%">ID</th>
+                <th>Produto</th>
+                <th style="width:30%">Descrição</th>
+                <th>Preço</th>
+                <th class="center"></th>
+              </thead>
+              <tbody id="tbody">
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="divbotao">
+          <input type="button" value="Voltar" id="Voltar-pag" onclick="javascript:location.href='./index.html'"/>
+        </div>
+
+        </form>
+    </section>
+
+    <section class="quadro-Add-vendas">
+      <section class="section-header">
+        <h1>Alterar Preço</h1>
+      </section>
+      <form>
+        <label for="nome-produto">ID do Produto:</label>
+        <input type="text" id="ID-produto" />
+        <label for="valor-produto">Novo Preço:</label>
+        <input type="text" id="novo-valor-produto" />
+        <div class="divbotao">
+        <input type="button" value="Alterar" id="alterar-produto" />
+      </div>
+      </form>
+    </section>
+
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+
+
+    <script src="./minhas-vendas.js"></script>
+  </body>
+</html>

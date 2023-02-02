@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Produtos comprados</title>
+  </head>
+  <body>
+    <section class="quadro-produtos-comprados">
+        <section class="section-header">
+        <h1>Produtos Comprados</h1>
+        </section>
+        <form>
+          <div class="content">
+            <table>
+              <thead>
+                <th style="width:5%">ID</th>
+                <th>Produto</th>
+                <th style="width:30%">Descrição</th>
+                <th>Preço</th>
+              </thead>
+              <tbody id="tbody">
+                
+              </tbody>
+            </table>
+          </div>
+
+          <div class="divbotao">
+          <input type="button" value="Voltar" id="Voltar-pag" onclick="javascript:location.href='./index.html'"/>
+        </div>
+        </form>
+    </section>
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+
+
+    <script src="./produto-comprados.js"></script>
+  </body>
+</html>

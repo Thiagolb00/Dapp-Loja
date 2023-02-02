@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Mercado dApp</title>
+  </head>
+  <body>
+    <section class="quadro-Add-produto">
+      <section class="section-header">
+        <h1>Adicionar Produto</h1>
+      </section>
+      <form>
+        <label for="nome-produto">Nome do Produto:</label>
+        <input type="text" id="nome-produto" />
+        <label for="valor-produto" class="col-sm-2 control-label">Descrição:</label>
+        <input type="text" id="descricao-produto" />
+        </div>
+        <label for="valor-produto">Valor do Produto:</label>
+        <input type="text" id="valor-produto" />
+        <div class="divbotao">
+        <input type="button" value="Adicionar" id="adicionar-produto" />
+        <input type="button" value="Voltar" id="Voltar-pag" onclick="javascript:location.href='./index.html'"/>
+        </div>
+      </form>
+    </section>
+
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+
+
+    <script src="./adicionar-produto.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Mercado dApp</title>
+  </head>
+  <body>
+    <div id="idprod">
+    <div class="Add-produto">
+      <section class="section-header">
+        <h1>Adicionar Produto</h1>
+      </section>
+      <form>
+        <div class="divbotao">
+          <input type="button" value="Adicionar" id="adicionar-produto" onclick="javascript:location.href='./adicionar-produto.html'"/>
+        </div>
+      </form>
+    </div>
+
+    <div class="produtos-comprados">
+      <section class="section-header">
+        <h1>Produtos Comprados</h1>
+      </section>
+      <form>
+        <div class="divbotao">
+        <input type="button" value="Consultar" id="consultar-comprado" onclick="javascript:location.href='./produtos-comprados.html'"/>
+      </div>
+      </form>
+    </div>
+
+    <div class="minhas-vendas">
+      <section class="section-header">
+        <h1>Minhas Vendas</h1>
+      </section>
+      <form>
+        <div class="divbotao">
+        <input type="button" value="Consultar" id="consultar-vendas" onclick="javascript:location.href='./minhas-vendas.html'"/>
+      </div>
+      </form>
+    </div>
+  </div>
+
+    <section class="Comprar-Produto">
+      <section class="section-header">
+        <h1>Comprar Produto</h1>
+      </section>
+      <form>
+        <div class="content">
+          <table>
+            <thead>
+              <th style="width:5%">ID</th>
+              <th>Produto</th>
+              <th style="width:30%">Descrição</th>
+              <th>Preço</th>
+              <th class="center"></th>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+
+      </form>
+    </section>
+
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+
+
+    <script src="./index.js"></script>
+  </body>
+</html>
